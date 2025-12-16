@@ -1,0 +1,217 @@
+{
+  "title": "Mangas Focus",
+  "subtitle": "Séries, auteurs et tendances",
+  "logo": "assets/images/logo.svg",
+  "cta": {
+    "text": "Lire et découvrir",
+    "label": "S'abonner"
+  },
+  "feature": {
+    "headline": "2025 : nouvelles séries et adaptations",
+    "summary": "Entre papier et écran.",
+    "body": "Panorama des sorties et adaptations majeures.",
+    "date": "1er Décembre 2025",
+    "topic": "Sorties",
+    "author": "Varun",
+    "imageHero": "assets/texture/texture7.jpg",
+    "rating": 4.7,
+    "views": 11100,
+    "read": "7 min",
+    "tags": [
+      "séries",
+      "adaptations"
+    ],
+    "titre": "2025 : nouvelles séries et adaptations",
+    "description": "Entre papier et écran.",
+    "corps": "Panorama des sorties et adaptations majeures.",
+    "theme": "Sorties",
+    "auteur": "Varun"
+  },
+  "stories": [
+    {
+      "headline": "Auteurs",
+      "summary": "Styles et influences.",
+      "body": "Portraits d'auteurs contemporains.",
+      "date": "28 Novembre 2025",
+      "topic": "Auteurs",
+      "author": "Rédaction",
+      "image": "assets/texture/texture7.jpg",
+      "rating": 4.6,
+      "views": 9000,
+      "read": "6 min",
+      "titre": "Auteurs",
+      "description": "Styles et influences.",
+      "corps": "Portraits d'auteurs contemporains.",
+      "theme": "Auteurs",
+      "auteur": "Rédaction"
+    },
+    {
+      "headline": "Genres et codes",
+      "summary": "Shonen, Seinen, Shojo.",
+      "body": "Tonalités et publics.",
+      "date": "25 Novembre 2025",
+      "topic": "Genres",
+      "author": "Varun",
+      "image": "assets/texture/texture7.jpg",
+      "rating": 4.4,
+      "views": 7800,
+      "read": "5 min",
+      "titre": "Genres et codes",
+      "description": "Shonen, Seinen, Shojo.",
+      "corps": "Tonalités et publics.",
+      "theme": "Genres",
+      "auteur": "Varun"
+    },
+    {
+      "headline": "Adaptations",
+      "summary": "Papier à écran.",
+      "body": "Fidélité et réécritures.",
+      "date": "20 Novembre 2025",
+      "topic": "Adaptations",
+      "author": "Rédaction",
+      "image": "assets/texture/texture7.jpg",
+      "rating": 4.3,
+      "views": 7200,
+      "read": "5 min",
+      "titre": "Adaptations",
+      "description": "Papier à écran.",
+      "corps": "Fidélité et réécritures.",
+      "theme": "Adaptations",
+      "auteur": "Rédaction"
+    },
+    {
+      "headline": "Auteurs féminins",
+      "summary": "Regards et thèmes.",
+      "body": "Parcours et œuvres.",
+      "date": "16 Novembre 2025",
+      "topic": "Auteurs",
+      "author": "Varun",
+      "image": "assets/texture/texture7.jpg",
+      "rating": 4.5,
+      "views": 8600,
+      "read": "6 min",
+      "titre": "Auteurs féminins",
+      "description": "Regards et thèmes.",
+      "corps": "Parcours et œuvres.",
+      "theme": "Auteurs",
+      "auteur": "Varun"
+    },
+    {
+      "headline": "Édition et marché",
+      "summary": "Tendances et chiffres.",
+      "body": "Diffusion et ventes.",
+      "date": "12 Novembre 2025",
+      "topic": "Économie",
+      "author": "Rédaction",
+      "image": "assets/texture/texture7.jpg",
+      "rating": 4.2,
+      "views": 6400,
+      "read": "4 min",
+      "titre": "Édition et marché",
+      "description": "Tendances et chiffres.",
+      "corps": "Diffusion et ventes.",
+      "theme": "Économie",
+      "auteur": "Rédaction"
+    }
+  ],
+  "topics": [
+    {
+      "title": "Genres",
+      "desc": "Shonen, Seinen, Shojo.",
+      "icon": "🗾",
+      "image": "assets/texture/texture7.jpg",
+      "color": "#8B5CF6",
+      "nom": "Genres",
+      "description": "Shonen, Seinen, Shojo."
+    },
+    {
+      "title": "Auteurs",
+      "desc": "Styles et influences.",
+      "icon": "✒️",
+      "image": "assets/texture/texture7.jpg",
+      "color": "#3B82F6",
+      "nom": "Auteurs",
+      "description": "Styles et influences."
+    },
+    {
+      "title": "Adaptations",
+      "desc": "Papier et écran.",
+      "icon": "🎬",
+      "image": "assets/texture/texture7.jpg",
+      "color": "#10B981",
+      "nom": "Adaptations",
+      "description": "Papier et écran."
+    },
+    {
+      "title": "Économie",
+      "desc": "Diffusion et ventes.",
+      "icon": "💹",
+      "image": "assets/texture/texture7.jpg",
+      "color": "#F59E0B",
+      "nom": "Économie",
+      "description": "Diffusion et ventes."
+    },
+    {
+      "title": "Thèmes",
+      "desc": "Récits et axes.",
+      "icon": "📚",
+      "image": "assets/texture/texture7.jpg",
+      "color": "#EF4444",
+      "nom": "Thèmes",
+      "description": "Récits et axes."
+    },
+    {
+      "title": "Marché",
+      "desc": "Édition et cycles.",
+      "icon": "🛒",
+      "image": "assets/texture/texture7.jpg",
+      "color": "#6B7280",
+      "nom": "Marché",
+      "description": "Édition et cycles."
+    }
+  ],
+  "contributors": [
+    {
+      "firstName": "Varun",
+      "expertise": "Lecteur passionné",
+      "bio": "Analyse et recommandations.",
+      "avatar": "assets/texture/texture7.jpg",
+      "email": "varun@mangas.com",
+      "articles": 17,
+      "followers": 4300,
+      "prenom": "Varun",
+      "nom": "",
+      "typeExperience": "Lecteur passionné",
+      "presentation": "Analyse et recommandations.",
+      "image": "assets/texture/texture7.jpg"
+    },
+    {
+      "firstName": "Aiko",
+      "expertise": "Éditrice",
+      "bio": "Lignes éditoriales.",
+      "avatar": "assets/texture/texture7.jpg",
+      "email": "aiko@editions.jp",
+      "articles": 15,
+      "followers": 4100,
+      "prenom": "Aiko",
+      "nom": "Tanaka",
+      "typeExperience": "Éditrice",
+      "presentation": "Lignes éditoriales.",
+      "image": "assets/texture/texture7.jpg"
+    },
+    {
+      "firstName": "Ken",
+      "expertise": "Critique",
+      "bio": "Adaptations et trends.",
+      "avatar": "assets/texture/texture7.jpg",
+      "email": "ken@critique.jp",
+      "articles": 16,
+      "followers": 4400,
+      "prenom": "Ken",
+      "nom": "Sato",
+      "typeExperience": "Critique",
+      "presentation": "Adaptations et trends.",
+      "image": "assets/texture/texture7.jpg"
+    }
+  ]
+}
