@@ -37,86 +37,97 @@ function getData() {
 
       // TODO 3: REMPLIR L'ARTICLE PRINCIPAL
 
-      let hero = document.getElementById("article-principal");
-
-      let heroCard = `
-    <img id="hero-image" src="${journal.feature.imageHero}" alt="${journal.feature.headline}">
+      function remplirHero(feature) {
+        let hero = document.getElementById("article-principal");
+        let heroCard = `
+    <img id="hero-image" src="${feature.imageHero}" alt="${feature.headline}">
     <div class="hero-info">
-        <h2 id="hero-titre">${journal.feature.headline}</h2>
-        <p id="hero-description">${journal.feature.summary}</p>
-        <p id="hero-auteur">Par <strong>${journal.feature.author}</strong> | ${journal.feature.date}</p>
-    </div>
-`;
+        <h2 id="hero-titre">${feature.headline}</h2>
+        <p id="hero-description">${feature.summary}</p>
+        <p id="hero-auteur">Par <strong>${feature.author}</strong> | ${feature.date}</p>
+        <p class="theme-badge">${feature.topic}</p>
+        <p class="date">${feature.date}</p>
+    </div>`;
+        hero.insertAdjacentHTML("beforeend", heroCard);
+      }
 
-      hero.insertAdjacentHTML("beforeend", heroCard);
+      remplirHero(journal.feature)
 
       // TODO 4: REMPLIR LA GRILLE D'ARTICLES
-
-      let grille = document.getElementById(`articles-grid`)
-      journal.stories.forEach(storie => {
-        let carte = `
-        <div class="article-card">
-            <img src="${storie.image}" alt="${storie.titre}">
-            <h3 class="article-title">${storie.titre}</h3>
-            <p class="article-description">${storie.description}</p>
-            <p class="article-author">${storie.author} - ${storie.date}</p>
+      function remplirArticles(stories) {
+        let grille = document.getElementById("articles-grid");
+        stories.forEach(storie => {
+          let carte = `
+      <div class="article-card">
+        <img src="${storie.image}" alt="${storie.titre}">
+        <div class="article-content">
+          <p class="theme-badge">${storie.theme}</p>
+          <h3>${storie.titre}</h3>
+          <p>${storie.description}</p>
+          <p class="article-author">Par ${storie.author} - ${storie.date}</p>
+          <button class="read-btn">Lire l'article</button>
         </div>
-    `;
-        grille.insertAdjacentHTML("beforeend", carte);
-      });
-
-
+      </div>`;
+          grille.insertAdjacentHTML("beforeend", carte);
+        });
+      }
+      remplirArticles(journal.stories)
 
       // TODO 5: REMPLIR LES THEMES
 
-      let themesContainer = document.getElementById("themes-list");
-
-      journal.topics.forEach(topic => {
-        let carte = `
-        <div class="theme-item">
-            <span class="theme-icon">${topic.icon}</span>
-            <h3>${topic.title}</h3>
-            <p>${topic.desc}</p>
-        </div>
-    `;
-        themesContainer.insertAdjacentHTML("beforeend", carte);
-      });
-
-
-
-
+      function remplirThemes(topics) {
+        let themesContainer = document.getElementById("themes-list");
+        topics.forEach(topic => {
+          let carte = `
+      <div class="theme-item">
+        <p class="theme-icon">${topic.icon}</p>
+        <h3>${topic.title}</h3>
+        <p>${topic.desc}</p>
+      </div>`;
+          themesContainer.insertAdjacentHTML("beforeend", carte);
+        });
+      }
+      remplirThemes(journal.topics)
 
 
       // TODO 6: REMPLIR LES AUTEURS
 
-      let AuteurContainer = document.getElementById("authors-list");
-
-      journal.contributors.forEach(author => {
-        let carte = `
-        <div class="authors-card">
-           <img class="author-image" src="${author.avatar}" alt="${author.firstName}">
-            <h3>${author.firstName}</h3>
-            <p class ="author-role" >${author.expertise}</p>
-            <div class="author-socials">
-                <a href="${author.email}"></a>
-            </div>
-        
+      function remplirAuteurs(contributors) {
+        let AuteurContainer = document.getElementById("authors-list");
+        contributors.forEach(author => {
+          let carte = `
+      <div class="author-card">
+        <img class="author-image" src="${author.avatar}" alt="${author.firstName}">
+        <h3>${author.firstName}</h3>
+        <p class="author-role">${author.expertise}</p>
+        <div class="author-socials">
+          <a href="${author.email}">nico-leboss@gmail.com</a>
         </div>
-    `;
-        AuteurContainer.insertAdjacentHTML("beforeend", carte);
-      });
+      </div>`;
+          AuteurContainer.insertAdjacentHTML("beforeend", carte);
+        });
+      }
+
+      remplirAuteurs(journal.contributors)
 
       // TODO 7: REMPLIR LE BOUTON CALL TO ACTION
 
-      let ctaContainer = document.getElementById("call-to-action");
+      function remplirCTA(cta) {
+        let ctaContainer = document.getElementById("call-to-action");
+        let ctaHTML = `
+    <p>${cta.text}</p>
+    <button class="cta-button">${cta.label}</button>`;
+  
+        ctaContainer.innerHTML = ctaHTML;
+          let boutonCTA = ctaContainer.querySelector(".cta-button");
 
-      let ctaHTML = `
-  <p>${journal.cta.text} </p>
-  <button class="cta-button">${journal.cta.label}</button>
-`;
+  boutonCTA.addEventListener("click", () => {
+    alert("merci bcp !!!");
+  });
 
-      ctaContainer.innerHTML = ctaHTML;
+      }
 
+      remplirCTA(journal.cta)
       /// FIN DU CODE
     })
     .catch((error) => console.error('Erreur lors de la lecture des données :', error));
